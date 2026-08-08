@@ -26,12 +26,15 @@ footer {
     margin: 0 auto;
 }
 
+/* HEADER */
+
 header {
     display: grid;
     grid-template-columns: 150px 1fr;
     align-items: center;
     background-color: var(--primary-color);
-    padding: 10px 20px;
+    padding: 15px 20px;
+    min-height: 90px;
 }
 
 header > img {
@@ -39,27 +42,31 @@ header > img {
     height: auto;
 }
 
-nav {
+/* NAVIGATION */
+
+.main-nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
 }
 
-nav a {
+.main-nav a {
+    display: inline-block;
     color: white;
-    text-decoration: none;
     background-color: var(--accent1-color);
+    text-decoration: none;
     padding: 12px 18px;
     border-radius: 5px;
     font-weight: bold;
 }
 
-nav a:hover,
-nav a.active {
+.main-nav a:hover {
     background-color: var(--secondary-color);
     color: white;
 }
+
+/* HEADINGS */
 
 h1,
 h2 {
@@ -71,6 +78,8 @@ h2 {
     text-align: center;
     margin: 20px 0;
 }
+
+/* HERO */
 
 .hero {
     position: relative;
@@ -114,6 +123,8 @@ h2 {
     line-height: 1.6;
 }
 
+/* HISTORY */
+
 .history {
     padding: 20px;
 }
@@ -133,6 +144,8 @@ h2 {
     width: 200px;
     height: auto;
 }
+
+/* ADVENTURES */
 
 .adventures {
     padding: 20px 0;
@@ -159,6 +172,8 @@ figcaption {
     font-weight: bold;
     font-size: 0.85rem;
 }
+
+/* FOOTER */
 
 footer {
     display: flex;
@@ -190,6 +205,8 @@ footer p {
     object-fit: contain;
 }
 
+/* RESPONSIVE */
+
 @media (max-width: 850px) {
 
     header,
@@ -207,7 +224,7 @@ footer p {
         margin: 0 auto 10px;
     }
 
-    nav {
+    .main-nav {
         justify-content: center;
         flex-wrap: wrap;
     }
