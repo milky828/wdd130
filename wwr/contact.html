@@ -1,0 +1,203 @@
+```html
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+      content="Contact White Water Rafting Company for questions, reservations, and rafting adventure information.">
+    <meta name="author" content="Milky Yebassa">
+    <title>Contact Us | White Water Rafting Company</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="images/logo.png" alt="White Water Rafting Company logo">
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="contact-heading">
+            <h1>White Water Rafting Company</h1>
+
+            <p>
+                <strong>Address:</strong>
+                123 Main River Street, Kolob, California
+            </p>
+
+            <p>
+                <strong>Phone:</strong>
+                +1 999 999 9999
+            </p>
+
+            <p>
+                <strong>Email:</strong>
+                info@whitewater.com
+            </p>
+        </section>
+
+        <section class="contact-grid">
+
+            <div class="map">
+                <iframe src="https://www.google.com/maps?q=Kolob,Canyon,California&output=embed"
+                  title="Map showing the location of White Water Rafting Company" loading="lazy">
+                </iframe>
+            </div>
+
+            <form>
+
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Placeholder" required>
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Placeholder" required>
+                </div>
+
+                <fieldset>
+                    <legend>What is the purpose of your message?</legend>
+
+                    <label>
+                        <input type="radio" name="purpose" value="general-inquiry" required>
+                        General Inquiry
+                    </label>
+
+                    <label>
+                        <input type="radio" name="purpose" value="reservation-question">
+                        Reservation Question
+                    </label>
+
+                    <label>
+                        <input type="radio" name="purpose" value="website-suggestion">
+                        Website Suggestion
+                    </label>
+                </fieldset>
+
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Type here"
+                      required></textarea>
+                </div>
+
+                <label class="newsletter">
+                    <input type="checkbox" name="newsletter">
+                    Please subscribe me to the monthly newsletter
+                </label>
+
+                <button type="submit">Get in Touch!</button>
+
+            </form>
+
+        </section>
+
+        <section class="team">
+
+            <h2>We Are Here to Serve You</h2>
+
+            <div class="employee-cards">
+
+                <figure>
+                    <img src="images/employee1.jpg" alt="Lead rafting guide">
+                    <figcaption>
+                        <strong>Lead Rafting Guide</strong>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/employee2.jpg" alt="Trip manager">
+                    <figcaption>
+                        <strong>Trip Manager</strong>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/employee3.jpg" alt="Customer service representative">
+                    <figcaption>
+                        <strong>Customer Service Representative</strong>
+                    </figcaption>
+                </figure>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            &copy; 2026 White Water Rafting Company | Milky Yebassa
+        </p>
+
+        <nav class="socialmedia">
+
+            <a href="https://facebook.com">
+                <img src="images/facebook.png" alt="Facebook">
+            </a>
+
+            <a href="https://instagram.com">
+                <img src="images/instagram.png" alt="Instagram">
+            </a>
+
+            <a href="https://telegram.org">
+                <img src="images/telegram.png" alt="Telegram">
+            </a>
+
+        </nav>
+
+    </footer>
+
+</body>
+
+</html>
+```
+```css
+/* WEEK 4 NAVIGATION FIX */
+
+header {
+display: grid;
+grid-template-columns: 180px 1fr;
+align-items: center;
+}
+
+header nav {
+display: flex;
+justify-content: flex-end;
+align-items: center;
+}
+
+header nav a {
+display: block;
+padding: 12px 22px;
+background-color: #1e5a8a;
+color: white;
+text-decoration: none;
+font-weight: bold;
+border-left: 1px solid white;
+}
+
+header nav a:last-child {
+border-right: 1px solid white;
+}
+
+header nav a:hover {
+background-color: #2f7db5;
+color: white;
+}
+
+header nav a:visited {
+color: white;
+}
+```
