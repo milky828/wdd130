@@ -388,8 +388,6 @@ footer p {
     font-weight: bold;
 }
 
-/* CONTACT PAGE RESPONSIVE DESIGN */
-
 @media (max-width: 850px) {
 
     .contact-grid {
